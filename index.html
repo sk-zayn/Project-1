@@ -5,176 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form action="">
+    <div class="container">
 
-         <h1>AMRITY UNIVERSITY</h1>
-    <H2>STUDENT REGISTERATION FORM</H2>
+        <div class="heading">
+            <h1>AMRITY UNIVERSITY</h1>
+            <H2>STUDENT REGISTERATION FORM</H2>
+        </div>
+        <form action="">
+            <div class="wrapper">
+                <h3>Personal Information</h3>
+                <div>First Name</div>
+                <input type="text" required maxlength="5" placeholder="Enter your first name" f>
+                <div>Last Name</div>
+                <input type="text" required maxlength="5" placeholder="Enter your Last name">
+                <div>Gender
 
-    <h3>Personal Information</h3>
-    <br>
-    <br>
+                    <div class="gender">
+                        <div>
+                            <input type="radio" value="Male">
+                            <label for="">Male</label>
+                        </div>
+                        <div><input type="radio" value="Female">
+                            <label for="">Female</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="Other">
+                            <label for="">Other</label>
+                        </div>
+                    </div>
 
-    <div >First Name</div>
-        <input type="text" required maxlength="5" placeholder="Enter your first name" f>
+                    <div> Date of birth </div>
+                    <input type="date">
+                    <div>Age</div>
+                    <input type="number" min="19" max="99" placeholder="Enter Your Age" size="100">
+                    <h3>Contact Information</h3>
+                    <div>Email Address</div>
+                    <input type="email" required placeholder="Enter Your Email Id">
+                    <div>
+                        <p>Phone number</p>
+                        <select>
+                            <option value="+91">+91</option>
+                            <option value="+101">+101</option>
+                        </select>
+                        <input type="tel" required max="10" min="10" placeholder="Enter your phone Number">
+                    </div>
+                    <div>Address</div>
+                    <textarea rows="7" cols="30" placeholder="Enter your address"></textarea>
+                    <div>
+                        <label for="">State</label>
+                        <select>
+                            <option value="maharashtra">Maharashtra</option>
+                            <option value="banglore">Banglore</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="jammu kashmir">Jammu Kashmir</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="">pin code</label>
+                        <input type="number" maxlength="6" placeholder="enter Your pin code">
+                    </div>
+                    <h3>Security information</h3>
+                    <div>
+                        <label for="">password</label>
+                        <input type="password">
+                    </div>
+                    <h3>Additional information</h3>
+                    <div>
+                        <p>Hobbies</p>
+                        <input type="checkbox">
+                        <label for="">Music</label>
+                        <input type="checkbox">
+                        <label for="">Swimming</label>
+                        <input type="checkbox">
+                        <label for="">Video games</label>
+                        <input type="checkbox">
+                        <label for="">Reading</label>
+                        <input type="checkbox">
+                        <label for="">Dance</label>
+                    </div>
+                    <diV>
+                        <input type="checkbox" required>
+                        <span>I here by declared that the above information provided is true</span>
+                    </diV>
+                    <button type="reset">reset</button>
+                    <button disabled>submit</button>
+                </div>
 
-    <br>
-    <br>
+        </form>
 
-    <div>Last Name</div>
-        <input type="text" required maxlength="5" placeholder="Enter your Last name">
-    
-    <br>
-    <br>
-
-    <div>Gender</div>
-        <input type="radio" value="Male">
-            <label for="">Male</label>
-
-        <input type="radio" value="Female">
-            <label for="">Female</label>
-
-        <input type="radio" value="Other">
-            <label for="">Other</label>
-
-    <br>
-    <br>
-
-    <div> Date of birth </div>     
-        <input type="date">  
-
-    <br>
-    <br>
-
-    <div>Age</div>
-        <input type="number" min="19" max="99" placeholder="Enter Your Age" size="100" >
-
-    <h3>Contact Information</h3>
-
-    <br>
-    <br>
-
-    <div>Email Address</div>
-    <input type="email" required placeholder="Enter Your Email Id">
-
-    <br>
-    <br>
-
-    <div><label for="">Phone Number</label>
-        <br>
-        <select >
-            <option value="+91">+91</option>
-            <option value="+101">+101</option>
-        </select>    
-        <input type="tel" required max="10" min="10" placeholder="Enter your phone Number">
-
+        <a href="https://www.youtube.com/watch?v=XaWW7bqG3is">Youtube</a>
     </div>
-        
-
-    <br>
-    <br>
-    <div>Address</div>
-    <textarea rows="7" cols="30" placeholder="Enter your address"></textarea>
-
-    <br>
-    <br>
-
-    <div>
-        <label for="">State</label>
-        <select >
-            <option value="maharashtra">Maharashtra</option>
-            <option value="banglore">Banglore</option>
-            <option value="Kerala">Kerala</option>
-            <option value="jammu kashmir">Jammu Kashmir</option>
-        </select>
-        <br>
-        <br>
-
-        <label for="">pin code</label>
-        <input type="number" maxlength="6" placeholder="enter Your pin code">
-    </div>
-
-    <br>
-    <br>
-
-    <h3>Security information</h3>
-
-    <DIV>
-        <label for="">password</label>
-        <input type="password">
-    </DIV>
-
-    <br>
-    <br>
-
-    <h3>Additional information</h3>
-
-    <div>
-       <p>Hobbies</p>
-        <input type="checkbox">
-        <label for="">Music</label>
-
-         <input type="checkbox">
-        <label for="">Swimming</label>
-
-         <input type="checkbox">
-        <label for="">Video games</label>
-
-         <input type="checkbox">
-        <label for="">Reading</label>
-
-         <input type="checkbox">
-        <label for="">Dance</label>
-    </div>
-    <br><br>
-
-    <diV>
-        <input type="checkbox" required>
-        <span>I here by declared that the above information provided is true</span>
-
-
-    </diV>
-
-    <button type="reset">reset</button>
-    <button disabled>submit</button>
-
-
-    </form>
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-    
-
-    
-
-
 </body>
 
 </html>

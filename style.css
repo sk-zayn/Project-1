@@ -1,0 +1,19 @@
+h1{
+    text-decoration: dashed darkblue;
+}
+
+h3::after{
+    color: rgb(35, 212, 22);
+}
+
+input:enabled{
+    color: rgb(35, 30, 133);
+}
+
+h3::before{
+    content: ".....";
+}
+
+h3::after{
+    content: ".....";
+}
