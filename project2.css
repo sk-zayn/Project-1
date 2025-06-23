@@ -1,0 +1,142 @@
+:root {
+    --Whitewash: #DFFBFC;
+    --RapidRock: #6E7980;
+    --UptownTaupe: #AFC2CC;
+    --CameoBlue: #4B5257;
+    --SparklingRiver: #3D5B81;
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: var(--SparklingRiver);
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 15px 0;
+}
+
+#experience ul {
+    padding: 0;
+}
+
+#experience li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+#experience a {
+    color: white;
+    text-decoration: none;
+}
+#experience a:hover{
+    text-decoration: underline;
+}
+
+section {
+    padding: 0 0 30px 0;
+}
+
+.divider {
+    height: 2px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#button {
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #3D5B81;
+}
+
+#intro p {
+    padding: 10px 0;
+}
+
+#intro {
+    padding: 0 1rem 0 1rem;
+    max-width: 1200px;
+}
+
+#intro h2 {
+    font-size: 50px;
+
+    margin: 0 0 15px 0;
+}
+
+.achievement span {
+    font-size: 25px;
+    padding: 0 15px 0 0;
+}
+
+#hire {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    color: black;
+}
+
+.hireme {
+    background-color: var(--Whitewash);
+}
+
+nav {
+    font-size: 80%;
+    padding: 0 1rem;
+    background-color: var(--Whitewash);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: black;
+    font-size: 1.2rem;
+    /* text-decoration: none; */
+}
+
+nav li:first-child {
+    /* flex-grow: 1; */
+    flex-basis: 100%;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: bisque;
+    /* text-decoration: underline; */
+}
+
+@media (min-width: 500px) {
+    nav li:first-child {
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+}
