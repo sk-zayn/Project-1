@@ -1,0 +1,188 @@
+html {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(132deg, rgba(102, 124, 232, 1) 18%, rgba(117, 78, 166, 1) 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.wrapper {
+    background-color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 65px;
+    gap: 5px;
+}
+
+.buttons input {
+    padding: 7px 50px;
+    width: 170px;
+    background: linear-gradient(132deg, rgba(102, 124, 232, 1) 18%, rgba(117, 78, 166, 1) 75%);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 7px;
+    font-size: 11px;
+    padding: 10px 0;
+}
+
+h2,
+p {
+    text-align: center;
+    padding: 2.5px;
+}
+
+.registration input {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #e1e8f0;
+    border-radius: 7px;
+    background: #f8f9fa;
+}
+
+.registration label {
+    color: #374152;
+    font-size: smaller;
+}
+
+h2 {
+    color: #2d3748;
+    font-size: 23px;
+    font-weight: 500px;
+}
+
+
+.texts {
+    margin-bottom: 20px;
+}
+
+.rememberme p {
+    display: inline;
+}
+
+.rememberme {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.signinbtn {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+a {
+    color: #677feb;
+    font-size: x-small;
+}
+
+.signinbtn input {
+    padding: 9px;
+    width: 340px;
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(132deg, rgba(102, 124, 232, 1) 18%, rgba(117, 78, 166, 1) 75%);
+    margin: 10px 0;
+    color: white;
+}
+
+#lastbutton {
+    background: none;
+    color: #6c758c;
+}
+
+p {
+    color: #718096;
+    font-size: smaller;
+}
+
+#lastpara {
+    font-size: x-small;
+}
+
+
+
+
+
+
+
+
+
+.buttons2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 65px;
+    gap: 5px;
+}
+
+.buttons2 input {
+    padding: 7px 50px;
+    width: 170px;
+    background: linear-gradient(132deg, rgba(102, 124, 232, 1) 18%, rgba(117, 78, 166, 1) 75%);
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 7px;
+    font-size: 11px;
+    padding: 10px 0;
+}
+
+#lastbutton2 {
+    background: none;
+    color: #6c758c;
+}
+
+#usernameText2 {
+    margin-bottom: 40px;
+}
+
+#Email {
+    margin-bottom: 40px;
+}
+
+
+
+.divider{
+    height: 3px;
+    background: #e1e8f0;
+    border-radius: 20px ;
+}
+
+.createAccount{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.createAccount input {
+    padding: 9px;
+    width: 340px;
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(132deg, rgba(102, 124, 232, 1) 18%, rgba(117, 78, 166, 1) 75%);
+    margin: 10px 0;
+    color: white;
+}
+

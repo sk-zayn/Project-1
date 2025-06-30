@@ -1,0 +1,114 @@
+html{
+    box-sizing: border-box;
+    font-family:sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+.equal{
+    color:white;
+    background-color: #D95D43;
+    border:none;
+}
+
+.container{
+    background-color: #e3e6e5;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    background-color: #1A1A1A;
+    padding: 1rem;
+    border-radius: 0.5rem; 
+}
+#para{
+    color: white;
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+    gap: 200px;
+}
+
+.calculator form input,button{
+    border: 1px solid #303030;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin: 10px 2px;
+    border-radius: 100%;
+}
+/* div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+} */
+.divider{
+    background-color:#aaabad;
+    height: 0.1rem;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    color: white;
+}
+.nav div{
+    border: 1px solid white;
+    padding: 0px 35px 10px 35px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.nav div:first-child{
+    color: #D95D43;
+    border-bottom: 3px solid #D95D43;
+}
+.nav div:last-child{
+    color: #aaabad;
+    border-bottom:3px solid #aaabad;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.calculator .display{
+    width: 290px;
+    border-radius:5px;
+    border: none;
+    text-align: right;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.specialButtons button{
+   background-color:#303030;
+   border: none;
+   color:#aaabad;
+}
+.normalButtons button:last-child{
+    color: #aaabad;
+    background-color: #303030;
+    border: none;
+}
+
+.lastbutton button:first-child{
+    color: #aaabad;
+    background-color:#303030;
+    border: none;
+}

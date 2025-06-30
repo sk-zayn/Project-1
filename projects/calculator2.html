@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator 2</title>
+    <link rel="stylesheet" href="calculator2.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <form name="calc">
+
+                <div class="nav">
+                    <div>
+                        container
+                    </div>
+                    <div>
+                        converter
+                    </div>
+                </div>
+                <div id="para">
+                    23 + 677 - 50 = 650
+                </div>
+                <div class=>
+                    <input type="number" name="display" class="display">
+                </div>
+                <div class="divider">
+
+                </div>
+                <div class="buttons specialButtons">
+                    <button>C</button>
+                    <button>+</button>
+                    <button>%</button>
+                    <button>/</button>
+                </div>
+                <div class="buttons normalButtons">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>*</button>
+                </div>
+                <div class="buttons normalButtons">
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>-</button>
+                </div>
+                <div class="buttons normalButtons">
+                    <button type="button" value="1"  onclick="display.value += '1'">1</button>
+                    <button type="button" value="2" onclick="display.value += '2'">2</button>
+                    <button>3</button>
+                    <button type="button" value="+" onclick="display.value += '+' ">+</button>
+
+                </div>
+                <div class="buttons lastbutton">
+                    <button>GT</button>
+                    <button type="button" onclick="calc.display.value += '0'">0</button>
+                    <button type="button" onclick="calc.display.value += '.'">.</button>
+                    <button class="equal" type="button" onclick="calc.display.value = eval(calc.display.value)">=</button>
+                </div>  
+
+
+
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
