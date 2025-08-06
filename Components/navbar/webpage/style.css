@@ -485,59 +485,77 @@ button {
     justify-content: center;
     align-items: center;
 }
-.fifthheading{
+
+.fifthheading {
     text-align: center;
 }
-.fifthheading :first-child{
+
+.fifthheading :first-child {
     font-size: 36px;
     font-weight: 700;
     padding: 10px;
 }
-.fifthheading :last-child{
+
+.fifthheading :last-child {
     font-size: 18;
     font-weight: 400;
     color: #4B5563;
     padding: 10px;
     margin-bottom: 30px;
 }
-.fifthcard1,.fifthcard2,.fifthcard3{
+
+.fifthcard1,
+.fifthcard2,
+.fifthcard3 {
     padding: 0px 15px;
     border-radius: 7px;
     box-shadow: 0px 0px 3px #dadee4;
 }
-.cardlink1,.cardlink2,.cardlink3{
+
+.cardlink1,
+.cardlink2,
+.cardlink3 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px;
     margin: 60px 0;
 }
-.cardlink1, .cardlink2, .cardlink3, a{
+
+.cardlink1,
+.cardlink2,
+.cardlink3,
+a {
     text-decoration: none;
     color: #1D4ED8;
     font-size: 16px;
     font-weight: 600;
 }
-.fifthcardheadings{
+
+.fifthcardheadings {
     text-align: left;
     margin-left: 5px;
 }
-.fifthcardheadings :first-child{
+
+.fifthcardheadings :first-child {
     font-size: 20px;
     font-weight: 600;
     padding: 0px 5px 10px 5px;
 }
-.fifthcardheadings :last-child{
+
+.fifthcardheadings :last-child {
     font-size: 16px;
     font-weight: 400;
     padding: 10px 5px 20px 5px;
 }
-.fifthbtn{
+
+.fifthbtn {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
 }
-.fifthbtn span{
+
+.fifthbtn span {
     border: none;
     padding: 5px 15px;
     border-radius: 7px;
@@ -546,30 +564,36 @@ button {
     font-size: 14px;
     font-weight: 500;
 }
-.fifthseccard{
+
+.fifthseccard {
     display: flex;
     justify-content: space-around;
     padding: 30px 30px 80px;
 }
-.lastright{
+
+.lastright {
     width: 50%;
     padding: 20px;
 
 }
-.lastmain{
+
+.lastmain {
     display: flex;
 }
-.formdiv{
+
+.formdiv {
     display: flex;
     flex-direction: column;
 }
-.formdiv :first-child{
+
+.formdiv :first-child {
     font-size: 16px;
     font-weight: 500;
     color: #374151;
     padding-bottom: 12px;
 }
-.formdiv :last-child{
+
+.formdiv :last-child {
     width: 100%;
     height: 45px;
     border-radius: 7px;
@@ -577,66 +601,81 @@ button {
     margin-bottom: 28px;
     font-size: 16px;
 }
-form{
+
+form {
     box-shadow: 0px 0px 2px #dadee4;
     padding: 30px;
     border-radius: 10px;
     width: 95%;
 }
-#Details{
+
+#Details {
     height: 120px;
 }
-#lastbutton{
+
+#lastbutton {
     font-size: 16px;
     font-weight: 500;
     padding: 15px 35px;
     background: #2a6aee;
     color: white;
 }
-.lastheadings{
+
+.lastheadings {
     text-align: center;
 }
-.lastheadings :first-child{
+
+.lastheadings :first-child {
     font-size: 36px;
     font-weight: 700;
     padding: 10px;
 }
-.lastheadings :last-child{
+
+.lastheadings :last-child {
     font-size: 18px;
     font-weight: 400;
     color: #4B5563;
     padding-bottom: 50px;
 }
-.lastsvg{
+
+.lastsvg {
     height: 48px;
     width: 48px;
     background: #dbeafe;
     border-radius: 10px;
-    display: flex;justify-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     color: #2563eb;
     margin-right: 20px;
 }
-.lastleft{
+
+.lastleft {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
-.ll1, .ll2, .ll3{
+
+.ll1,
+.ll2,
+.ll3 {
     padding: 15px;
     display: flex;
     margin-left: 35px;
 }
-.llheading :first-child{
+
+.llheading :first-child {
     font-size: 18px;
-    font-weight: 600; 
+    font-weight: 600;
     padding-bottom: 10px;
 }
-.llheading :last-child{
+
+.llheading :last-child {
     font-size: 16px;
     font-weight: 400;
     color: #4B5563;
 }
-.last{
+
+.last {
     background: #f7f9fa;
 }

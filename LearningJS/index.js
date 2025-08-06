@@ -107,8 +107,53 @@
 
 // })(7)
 
-var a = -4;
-let y = -a;
-console.log(a, typeof y);
-console.log(y);
+// var a = -4;
+// let y = -a;
+// console.log(a, typeof y);
+// console.log(y);
 
+
+// function isPrimeee(num){
+//     if (num %2 == 0 ){
+//         return true;
+//     }
+//     return false;
+// }
+// console.log(isPrimeee(18));
+
+// function isPalindrome(num){
+//     let str = "" + num;
+//     let i = 0;
+//     let j = str.length-1;
+//     while(i <= j){
+//         if(str[i] == str[j]){
+//             i++;
+//             j--;
+//         }
+//         else{
+//             return str + "is not palindrome";
+//         }
+//     }
+//     return str + " is palindrome";
+// }
+// console.log(isPalindrome("naman"));
+// function swap(arr, i, j){
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+// }
+// let arr = [1,1,0,1,0,0,1,0,1];
+// function inLine(arr){
+//     let i = 0;
+//     let j = arr.length-1;
+//     while(i <= j){
+//         if (arr[i] == 1){
+//             swap(arr, i, j);
+//             j--
+//         } else{
+//             i++
+//         }
+//     }
+// }
+// inLine(arr);
+// console.log(arr);

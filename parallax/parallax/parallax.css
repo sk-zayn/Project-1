@@ -1,0 +1,92 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing:inherit ;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.first-image{
+    background-image: url(1.jpg);
+    height: 400px;
+    
+    background-size: cover;       /* Makes the image cover the whole container */
+    background-position: bottom;  /* Centers the image */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cdc8c8;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+.second-image{
+    background-image: url(2.jpg);
+    height: 400px;
+    
+    background-size: cover;       /* Makes the image cover the whole container */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+    font-size: 3rem;
+    opacity: 0.8;
+
+
+}
+.third-image{
+    background-image: url(3.webp);
+    height: 400px;
+    background-size: cover;       /* Makes the image cover the whole container */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cdc8c8;
+    font-size: 3rem;
+    opacity: 0.8;
+
+
+}
+.fourth-image{
+    background-image: url(4.jpg);
+    height: 400px;
+    background-size: cover;       /* Makes the image cover the whole container */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+    font-size: 3rem;
+    opacity: 0.8;
+
+}
+section{
+    text-align: center;
+    padding: 6rem 3rem;
+}
+.light{
+    background: #cdc8c8;
+    color: #0f0f0f;
+}
+.dark{
+    background: #282e34;
+    color: #ddd;
+}
+h2{
+    padding-bottom: 40px;
+}
+p{
+    font-size: large;
+    line-height: 1.5;
+}
