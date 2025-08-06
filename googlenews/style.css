@@ -1,0 +1,361 @@
+html{
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.top-header{
+    padding: 10px 20px;
+    
+}
+
+.logo{
+    font-size: 1.5rem;
+    flex-basis: 22%;
+    color: #5f6368;
+}
+.search-bar{
+    flex-basis: 54%;
+    width: 100%;
+    background: #f1f3f4;
+    border-radius: 7px;
+
+    
+}
+.icons{
+    width: 100%;
+    height: 100%;
+    
+}
+.search-icon, .drop-icon, .help-icon, .settings-icon, .apps-icon{
+    height: 26px;
+    width: 26px;
+    margin: 10px 10px;
+    background-color: transparent;
+    border: none;
+   
+}
+hr{
+    margin: 15px 0;
+    /* margin-bottom: 15px; */
+}
+.right-arrow{
+    margin: 0 10px 0 10px;
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    padding-top: 15px;
+
+}
+.help-icon{
+    margin: 0 15px 0 25px;
+}
+#search-input {
+    border: none;
+    width: 100%;
+    font-size: 1.1rem;
+    background: transparent;
+    padding: 5px 0;
+}
+.searct-input-wrapper{
+    width: 90%;
+    /* align-items: center; */
+}
+input:focus{
+    outline: none;
+}
+.header-icons{
+    flex-basis: 24%;
+}
+.sign-in-btn-header{
+    width: 6rem;
+    height: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight:500;
+    margin-left: 10px;
+}
+.left-menus-bottom-header{
+    flex-basis: 35%;
+    padding: 0 10px;
+    font-size: 0.93rem;
+    font-weight: 500;
+}
+.right-menus-bottom-header{
+    flex-basis: 65%;
+    font-size: 0.93rem;
+    font-weight: 500;
+}
+.bottom-header{
+    padding: 20px 20px 0 20px;
+}
+.menu-item a{
+    color: #5f6368;
+    text-decoration: none;
+
+}
+#navbar{
+    box-shadow: 0px 1px #f1f3f4;
+}
+#menuDivider div{
+    background: #dadce0;
+    height: 1.5rem;
+    width: 1px;
+}
+.left-menus, .right-menus{
+    margin-bottom: .4rem;
+}
+.right-menus:last-child{
+    margin-right: 10px;
+}
+.weather{
+    background: #ffffff;
+    box-shadow: 0px 0px 2px #dadce0;
+    padding: 15px 15px;
+    border-radius: 15px;
+}
+.right-weather > span:first-child{
+    color: #80868b;
+    font-size: 12px;
+    line-height: 0.3;
+}
+.right-weather > span:nth-child(2){
+    font-size: 24px;
+}
+.right-weather > span:last-child{
+    font-size: 12px;
+    line-height: 0.3; 
+}
+.right-weather > span:last-child a{
+    text-decoration: none; 
+}
+.main-section{
+    background: #f6f8fc;
+}
+.date > span:first-child{
+    font-size: 28px;
+}
+.date > span:last-child{
+    color: #5f6368;
+}
+.update{
+    padding: 10px;
+}
+.weather-extender{
+    height: 60px;
+    width: 20px;
+}
+.weather-extender > img{
+    width: 100%;
+}
+#firstColTopHeading {
+  white-space: nowrap;
+  font-size: 20px;
+  text-decoration: none;
+}
+#secondColTopHeading{
+    white-space: nowrap;
+    font-size: 20px;
+    color: #00758c;
+    text-decoration: none;
+}
+.row #firstCol{
+    flex-basis: 30%;
+    background: white;
+}
+#firstCol{
+    margin-left: 10px;
+    padding: 0;
+    border-radius: 15px;
+}
+#secondCol{
+    margin-right: 10px;
+    padding: 0;
+    border-radius: 15px;
+}
+.second-row-first-image{
+    width: 100%;
+    height: 175px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+.second-row-first-image img{
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+}
+.left-second-row-second-col{
+        flex-basis: 20%;
+}
+.arrow-img{
+    height: 26px;
+    width: 26px;
+}
+#ndtv{
+    font-size: 12px;
+    
+}
+.ndtv-fevicon{
+    padding: 10px 0 10px 25px ;
+}
+.fevicon-image{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+}
+.fevicon-image img{
+    height: 100%;
+    width: 100%;
+}
+.ndtv-fevicon p{
+    margin-left: 5px;
+    margin-bottom: 0rem;
+    font-weight: 500;
+}
+.image-link a{
+    font-size: 1.23rem;
+    color: black;
+    text-decoration: none;
+}
+.image-link a:hover{
+    text-decoration: underline;
+}
+.image-link{
+    padding-left: 25px;
+}
+.samiran-mishra{
+    padding-left: 25px;
+}
+#time{
+    font-size: 0.8rem;
+}
+#author{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #444746;
+
+}
+.image-heading {
+    width: fit-content;
+
+}
+.left-second-row-second-col{
+    padding: 0 10px;
+}
+.image-heading p{
+    margin-left: 5px;
+    margin-bottom: 0rem;
+    font-weight: 500;
+    font-size: 12px;
+}
+.second-col-second-div a{
+    color: #444746;
+    font-size:14px;
+    line-height: 0;
+    text-decoration: none;
+}
+.second-col-second-div a:hover{
+    text-decoration: underline;
+}
+
+.second-col-second-div{
+    margin-bottom: 2px;
+}
+.first-heading-second-col{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.image-right{
+    height: 70px;
+    width: 70px;
+    margin-right:25px; ;
+    border-radius: 10px;
+}
+.image-right img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.second-col-second-div a{
+    font-size: 16px;
+    color: black;
+}
+.second-col-bottom-section{
+    background: white;
+    border-radius: 15px;
+
+}
+.second-col-top-section{
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.second-col-thrid-div p{
+    margin-bottom: 5ox;
+}
+.bottom-section-para{
+    padding-left: 15px ;
+    margin-right: 7px;
+}
+.bottom-section-button{
+    border-radius: 80px;
+}
+.left-third-row{
+    margin-left: 20px;
+}
+.left-third-row-second-child{
+    height: 100px;
+    width: 120px;
+    margin-right:25px; ;
+    border-radius: 10px;
+}
+.left-third-row-second-child img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.left-third-row-para a{
+    font-size: 18px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: black;
+
+}
+.left-third-row-para a:hover{
+    text-decoration: underline;
+}
+.third-col-thrid-div{
+    margin-left: 20px;
+}
+.sign-in-btn button{
+    padding:6px 25px;
+}
+.update2 {
+    padding-top: 40px
+}
+.news-row{
+    background: white;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+#newsPara{
+    font-size: 16px;
+}
+#newsHr hr{
+    padding: 0;
+    margin: 0;
+}
+.newsPara{
+    margin: 0;
+    padding: 0;
+}
+

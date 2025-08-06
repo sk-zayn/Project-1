@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google News</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Home Page -->
+    <div class="homepage">
+        <!-- Header -->
+        <div class="header">
+            <nav id="navbar">
+                <!-- Top Header -->
+                <div class="top-header d-flex align-items-center">
+                    <div class="logo fw-semibold">Google News</div>
+
+                    <div class="search-bar d-flex justify-content-between">
+                        <button class="search-icon d-flex justify-content-center align-items-center border-0">
+                            <img src="img/search (3).png" alt="searchIcon" class="icons">
+                        </button>
+                        <div class="searct-input-wrapper d-flex justify-content-center align-items-center">
+                            <input type="text" placeholder="Search for Topics, Location & Source" id="search-input">
+                        </div>
+                        <button class="drop-icon border-0">
+                            <img src="img/caret-down.png" alt="dropDownIcon" class="icons">
+                        </button>
+                    </div>
+
+                    <div class="header-icons d-flex justify-content-between">
+
+                        <div class="icons-section-1 d-flex justify-content-between align-items-center">
+                            <button class="help-icon border-0">
+                                <img src="img/interrogation (1).png" alt="helpIcon" class="icons">
+                            </button>
+                            <button class="settings-icon border-0">
+                                <img src="img/settings (1).png" alt="settingsIcon" class="icons">
+                            </button>
+                        </div>
+
+                        <div class="icons-section-2 d-flex justify-content-center align-items-center ">
+                            <button class="apps-icon border-0 ">
+                                <img src="img/apps (1).png" alt="appIcon" class="icons">
+                            </button>
+                            <button class="sign-in-btn-header btn btn-primary ">Sign in</button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Bottom Header -->
+                <div class="bottom-header d-flex flex-row ">
+
+                    <div class="left-menus-bottom-header">
+                        <ul class="left-menus d-flex list-unstyled justify-content-around">
+                            <li class="menu-item"><a href="">Home</a></li>
+                            <li class="menu-item"><a href="">For you</a></li>
+                            <li class="menu-item"><a href="">Following</a></li>
+                            <li class="menu-item"><a href="">News Showcase</a></li>
+                            <li id="menuDivider">
+                                <div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="right-menus-bottom-header">
+                        <ul class="right-menus d-flex list-unstyled justify-content-around ">
+                            <li class="menu-item"><a href="">India</a></li>
+                            <li class="menu-item"><a href="">World</a></li>
+                            <li class="menu-item"><a href="">Local</a></li>
+                            <li class="menu-item"><a href="">Business</a></li>
+                            <li class="menu-item"><a href="">Technology</a></li>
+                            <li class="menu-item"><a href="">Entertainment</a></li>
+                            <li class="menu-item"><a href="">Sports</a></li>
+                            <li class="menu-item"><a href="">Science</a></li>
+                            <li class="menu-item"><a href="">Health</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </nav>
+        </div>
+
+        <div class="main-section">
+            <!-- Updates -->
+            <div class="container">
+                <div class="row">
+                    <div class="update d-flex justify-content-between">
+                        <div class="date d-flex flex-column justify-content-center">
+                            <span>Your Briefing</span>
+                            <span>Thursday 17 june </span>
+                        </div>
+                        <div class="weather d-flex gap-5">
+                            <div class="weather-extender d-flex align-items-center">
+                                <img src="img/angle-small-left.png">
+                            </div>
+                            <div class="right-weather d-flex flex-column">
+                                <span>pune</span>
+                                <span>26&deg;C</span>
+                                <span><a href="">Google weather</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Section -->
+            <section class="hero-section">
+                <div class="container" id="heroSection">
+                    <div class="row d-flex gap-3">
+                        <!-- 1st col -->
+                        <div class="col" id="firstCol">
+                            <div class="right-arrow d-flex align-items-center">
+                                <a href="" id="firstColTopHeading">Top stories</a>
+                                <div class="arrow-img">
+                                    <img src="img/angle-small-right (3).png" class="icons" alt="">
+                                </div>
+                            </div>
+                            <div class="topic-divider me-3 ms-3">
+                                <hr>
+                            </div>
+                            <div class="row left-second-row gap-3">
+                                <div class="col left-second-row-first-col">
+                                    <div class="second-row-first-image">
+                                        <img src="img/Air-India-Probe-1.avif" alt="">
+                                    </div>
+                                    <div class="ndtv-fevicon d-flex align-items-center">
+                                        <div class="fevicon-image d-flex">
+                                            <img src="img/faviconV2.png" alt="">
+                                        </div>
+                                        <p id="ndtv">NDTV</p>
+                                    </div>
+                                    <div class="image-link">
+                                        <a href="">"It's Ethnic Cleansing": Syria's Druze To NDTV As Violence Escalates
+                                        </a>
+                                    </div>
+                                    <div class="samiran-mishra d-flex mt-2">
+                                        <p id="time">30-minutes ago</p>
+                                        <p id="author">. By Samiran Mishra</p>
+                                    </div>
+                                </div>
+                                <div class="col left-second-row-second-col">
+
+                                    <div class="first-heading-second-col ">
+                                        <div class="second-col-first-div d-flex align-items-center ">
+                                            <div class="fevicon-image">
+                                                <img src="img/faviconV2 (1).png" alt="">
+                                            </div>
+                                            <div class="image-heading">
+                                                <p>The Hindu</p>
+                                            </div>
+                                        </div>
+                                        <div class="second-col-second-div">
+                                            <a href="">Syrian presidency announces comprehensive ceasefire after
+                                                fighting in
+                                                Druze area</a>
+                                        </div>
+                                        <div id="time">20 Hours ago</div>
+                                    </div>
+
+                                    <div class="first-heading-second-col ">
+                                        <div class="second-col-first-div d-flex align-items-center ">
+                                            <div class="fevicon-image">
+                                                <img src="img/faviconV2 (1).png" alt="">
+                                            </div>
+                                            <div class="image-heading">
+                                                <p>The Hindu</p>
+                                            </div>
+                                        </div>
+                                        <div class="second-col-second-div">
+                                            <a href="">Syrian presidency announces comprehensive ceasefire after
+                                                fighting in
+                                                Druze area</a>
+                                        </div>
+                                        <div id="time">20 Hours ago</div>
+                                    </div>
+
+                                    <div class="first-heading-second-col ">
+                                        <div class="second-col-first-div d-flex align-items-center ">
+                                            <div class="fevicon-image">
+                                                <img src="img/faviconV2 (1).png" alt="">
+                                            </div>
+                                            <div class="image-heading">
+                                                <p>The Hindu</p>
+                                            </div>
+                                        </div>
+                                        <div class="second-col-second-div">
+                                            <a href="">Syrian presidency announces comprehensive ceasefire after
+                                                fighting in
+                                                Druze area</a>
+                                        </div>
+                                        <div id="time">20 Hours ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="topic-divider me-3 ms-3">
+                                <hr>
+                            </div>
+                            <div class="row left-second-row gap-3">
+                                <div class="col left-second-row-first-col">
+                                    <div class="second-row-first-image">
+                                        <img src="img/Air-India-Probe-1.avif" alt="">
+                                    </div>
+                                    <div class="ndtv-fevicon d-flex align-items-center">
+                                        <div class="fevicon-image d-flex">
+                                            <img src="img/faviconV2.png" alt="">
+                                        </div>
+                                        <p id="ndtv">NDTV</p>
+                                    </div>
+                                    <div class="image-link">
+                                        <a href="">"It's Ethnic Cleansing": Syria's Druze To NDTV As Violence Escalates
+                                        </a>
+                                    </div>
+                                    <div class="samiran-mishra d-flex mt-2">
+                                        <p id="time">30-minutes ago</p>
+                                        <p id="author">. By Samiran Mishra</p>
+                                    </div>
+                                </div>
+                                <div class="col left-second-row-second-col">
+
+                                    <div class="first-heading-second-col ">
+                                        <div class="second-col-first-div d-flex align-items-center ">
+                                            <div class="fevicon-image">
+                                                <img src="img/faviconV2 (1).png" alt="">
+                                            </div>
+                                            <div class="image-heading">
+                                                <p>The Hindu</p>
+                                            </div>
+                                        </div>
+                                        <div class="second-col-second-div">
+                                            <a href="">Syrian presidency announces comprehensive ceasefire after
+                                                fighting in
+                                                Druze area</a>
+                                        </div>
+                                        <div id="time">20 Hours ago</div>
+                                    </div>
+
+                                    <div class="first-heading-second-col ">
+                                        <div class="second-col-first-div d-flex align-items-center ">
+                                            <div class="fevicon-image">
+                                                <img src="img/faviconV2 (1).png" alt="">
+                                            </div>
+                                            <div class="image-heading">
+                                                <p>The Hindu</p>
+                                            </div>
+                                        </div>
+                                        <div class="second-col-second-div">
+                                            <a href="">Syrian presidency announces comprehensive ceasefire after
+                                                fighting in
+                                                Druze area</a>
+                                        </div>
+                                        <div id="time">20 Hours ago</div>
+                                    </div>
+
+                                    <div class="first-heading-second-col ">
+                                        <div class="second-col-first-div d-flex align-items-center ">
+                                            <div class="fevicon-image">
+                                                <img src="img/faviconV2 (1).png" alt="">
+                                            </div>
+                                            <div class="image-heading">
+                                                <p>The Hindu</p>
+                                            </div>
+                                        </div>
+                                        <div class="second-col-second-div">
+                                            <a href="">Syrian presidency announces comprehensive ceasefire after
+                                                fighting in
+                                                Druze area</a>
+                                        </div>
+                                        <div id="time">20 Hours ago</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="topic-divider me-3 ms-3">
+                                <hr>
+                            </div>
+
+                            <div class="left-third-row">
+                                <div class="left-third-row d-flex gap-4">
+                                    <div class="left-third-row-first-child">
+                                        <div class="second-col-first-div d-flex align-items-center gap-1">
+                                            <div class="fevicon-image d-flex align-items-center">
+                                                <img src="img/faviconV2 (2).png" alt="">
+                                            </div>
+                                            <div class="image-heading">
+                                                <p>Hindustan times</p>
+                                            </div>
+                                        </div>
+                                        <div class="left-third-row-para">
+                                            <a href="">What caused Air India crash? Investigators turn to 'tail fire'
+                                                for
+                                                clues</a>
+                                        </div>
+                                    </div>
+                                    <div class="left-third-row-second-child">
+                                        <img src="img/images.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="third-col-thrid-div">
+                                    <p id="time">4 Hours ago</p>
+                                </div>
+                            </div>
+                            <div class="topic-divider me-3 ms-3">
+                                <hr>
+                            </div>
+                            <div class="left-third-row">
+                                <div class="left-third-row d-flex gap-4">
+                                    <div class="left-third-row-first-child">
+                                        <div class="second-col-first-div d-flex align-items-center gap-1">
+                                            <div class="fevicon-image d-flex align-items-center">
+                                                <img src="img/faviconV2 (2).png" alt="">
+                                            </div>
+                                            <div class="image-heading">
+                                                <p>Hindustan times</p>
+                                            </div>
+                                        </div>
+                                        <div class="left-third-row-para">
+                                            <a href="">What caused Air India crash? Investigators turn to 'tail fire'
+                                                for
+                                                clues</a>
+                                        </div>
+                                    </div>
+                                    <div class="left-third-row-second-child">
+                                        <img src="img/images.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="third-col-thrid-div">
+                                    <p id="time">4 Hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2nd col -->
+                        <div class="col" id="secondCol">
+                            <div class="second-col-top-section">
+                                <div class="right-arrow d-flex align-items-center">
+                                    <a href="" id="secondColTopHeading">Local news</a>
+                                    <div class="arrow-img">
+                                        <img src="img/angle-small-right (4).png" class="icons" alt="">
+                                    </div>
+                                </div>
+                                <div class="topic-divider me-3 ms-3">
+                                    <hr>
+                                </div>
+
+                                <div class="second-col-first-div d-flex">
+                                    <div class="second-col-first-row-left ps-3">
+                                        <div class="second-col-first-div d-flex align-items-center gap-1">
+                                            <div class="fevicon-image d-flex align-items-center">
+                                                <img src="img/faviconV2 (2).png" alt="">
+                                            </div>
+                                            <div class="image-heading">
+                                                <p>Hindustan times</p>
+                                            </div>
+                                        </div>
+                                        <div class="second-col-second-div">
+                                            <a href="">Police recover two fingerprints after theft at actor Sangeeta
+                                                Bijlani’s Pune farmhouse</a>
+                                        </div>
+                                        <div class="second-col-thrid-div d-flex">
+                                            <p id="time">4 Hours ago</p>
+                                            <p id="author">. By Shrinivas Deshpande</p>
+                                        </div>
+                                    </div>
+                                    <div class="second-col-img">
+                                        <div class="image-right">
+                                            <img src="img/images.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="topic-divider me-3 ms-3">
+                                    <hr>
+                                </div>
+                                <div class="second-col-first-div d-flex">
+                                    <div class="second-col-first-row-left ps-3">
+                                        <div class="second-col-first-div d-flex align-items-center gap-1">
+                                            <div class="fevicon-image d-flex align-items-center">
+                                                <img src="img/faviconV2 (2).png" alt="">
+                                            </div>
+                                            <div class="image-heading">
+                                                <p>Hindustan times</p>
+                                            </div>
+                                        </div>
+                                        <div class="second-col-second-div">
+                                            <a href="">Police recover two fingerprints after theft at actor Sangeeta
+                                                Bijlani’s Pune farmhouse</a>
+                                        </div>
+                                        <div class="second-col-thrid-div d-flex">
+                                            <p id="time">4 Hours ago</p>
+                                            <p id="author">. By Shrinivas Deshpande</p>
+                                        </div>
+                                    </div>
+                                    <div class="second-col-img">
+                                        <div class="image-right">
+                                            <img src="img/images.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="topic-divider me-3 ms-3">
+                                    <hr>
+                                </div>
+                                <div class="second-col-first-div d-flex">
+                                    <div class="second-col-first-row-left ps-3">
+                                        <div class="second-col-first-div d-flex align-items-center gap-1">
+                                            <div class="fevicon-image d-flex align-items-center">
+                                                <img src="img/faviconV2 (2).png" alt="">
+                                            </div>
+                                            <div class="image-heading">
+                                                <p>Hindustan times</p>
+                                            </div>
+                                        </div>
+                                        <div class="second-col-second-div">
+                                            <a href="">Police recover two fingerprints after theft at actor Sangeeta
+                                                Bijlani’s Pune farmhouse</a>
+                                        </div>
+                                        <div class="second-col-thrid-div d-flex">
+                                            <p id="time">4 Hours ago</p>
+                                            <p id="author">. By Shrinivas Deshpande</p>
+                                        </div>
+                                    </div>
+                                    <div class="second-col-img">
+                                        <div class="image-right">
+                                            <img src="img/images.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="second-col-bottom-section">
+                                <div class="second-col-top-section">
+                                    <div class="right-arrow d-flex align-items-center">
+                                        <a href="" id="secondColTopHeading">Local news</a>
+                                        <div class="arrow-img">
+                                            <img src="img/angle-small-right (4).png" class="icons" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="topic-divider me-3 ms-3">
+                                        <hr>
+                                    </div>
+                                    <div class="bottom-section-para">
+                                        <p>Sign in for personalised stories in your briefing and news feed </p>
+                                    </div>
+                                    <div class="bottom-section-button d-grid col-10 mx-auto pb-3 ">
+                                        <button class="btn btn-primary rounded-pill">Sign in</button>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="update2 d-flex justify-content-between">
+                        <div class="date d-flex flex-column justify-content-center">
+                            <span>More News</span>
+                            <span>Sign in to get stories based on your interests</span>
+                        </div>
+
+                        <div class="sign-in-btn d-flex align-items-center">
+                            <button class="btn btn-primary rounded-pill">Sign in</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row news-row d-flex">
+                        <div class="col news-col-one">
+                            <div class="left-third-row">
+                            <div class="left-third-row d-flex gap-4">
+                                <div class="left-third-row-first-child">
+                                    <div class="second-col-first-div d-flex align-items-center gap-1">
+                                        <div class="fevicon-image d-flex align-items-center">
+                                            <img src="img/faviconV2 (2).png" alt="">
+                                        </div>
+                                        <div class="image-heading">
+                                            <p>Hindustan times</p>
+                                        </div>
+                                    </div>
+                                    <div class="left-third-row-para">
+                                        <a href="" id="newsPara">What caused Air India crash? Investigators turn to 'tail fire'
+                                            for
+                                            clues</a>
+                                    </div>
+                                </div>
+                                <div class="left-third-row-second-child">
+                                    <img src="img/images.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="third-col-thrid-div" >
+                                <p id="time" class="newsPara">4 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="topic-divider me-3 ms-3" id="newsHr">
+                                <hr>
+                        </div>
+                        <div class="left-third-row">
+                            <div class="left-third-row d-flex gap-4">
+                                <div class="left-third-row-first-child">
+                                    <div class="second-col-first-div d-flex align-items-center gap-1">
+                                        <div class="fevicon-image d-flex align-items-center">
+                                            <img src="img/faviconV2 (2).png" alt="">
+                                        </div>
+                                        <div class="image-heading">
+                                            <p>Hindustan times</p>
+                                        </div>
+                                    </div>
+                                    <div class="left-third-row-para">
+                                        <a href="" id="newsPara">What caused Air India crash? Investigators turn to 'tail fire'
+                                            for
+                                            clues</a>
+                                    </div>
+                                </div>
+                                <div class="left-third-row-second-child">
+                                    <img src="img/images.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="third-col-thrid-div">
+                                <p id="time">4 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="topic-divider me-3 ms-3">
+                            <hr>
+                        </div>
+                        <div class="left-third-row">
+                            <div class="left-third-row d-flex gap-4">
+                                <div class="left-third-row-first-child">
+                                    <div class="second-col-first-div d-flex align-items-center gap-1">
+                                        <div class="fevicon-image d-flex align-items-center">
+                                            <img src="img/faviconV2 (2).png" alt="">
+                                        </div>
+                                        <div class="image-heading">
+                                            <p>Hindustan times</p>
+                                        </div>
+                                    </div>
+                                    <div class="left-third-row-para">
+                                        <a href="" id="newsPara">What caused Air India crash? Investigators turn to 'tail fire'
+                                            for
+                                            clues</a>
+                                    </div>
+                                </div>
+                                <div class="left-third-row-second-child">
+                                    <img src="img/images.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="third-col-thrid-div">
+                                <p id="time">4 Hours ago</p>
+                            </div>
+                        </div>
+                        
+                        </div>
+                        <!-- <div class="vertical-divider"></div> -->
+                        <div class="col news-col-two">
+                            <div class="left-third-row">
+                            <div class="left-third-row d-flex gap-4">
+                                <div class="left-third-row-first-child">
+                                    <div class="second-col-first-div d-flex align-items-center gap-1">
+                                        <div class="fevicon-image d-flex align-items-center">
+                                            <img src="img/faviconV2 (2).png" alt="">
+                                        </div>
+                                        <div class="image-heading">
+                                            <p>Hindustan times</p>
+                                        </div>
+                                    </div>
+                                    <div class="left-third-row-para">
+                                        <a href="">What caused Air India crash? Investigators turn to 'tail fire'
+                                            for
+                                            clues</a>
+                                    </div>
+                                </div>
+                                <div class="left-third-row-second-child">
+                                    <img src="img/images.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="third-col-thrid-div">
+                                <p id="time">4 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="topic-divider me-3 ms-3">
+                                <hr>
+                        </div>
+                        <div class="left-third-row">
+                            <div class="left-third-row d-flex gap-4">
+                                <div class="left-third-row-first-child">
+                                    <div class="second-col-first-div d-flex align-items-center gap-1">
+                                        <div class="fevicon-image d-flex align-items-center">
+                                            <img src="img/faviconV2 (2).png" alt="">
+                                        </div>
+                                        <div class="image-heading">
+                                            <p>Hindustan times</p>
+                                        </div>
+                                    </div>
+                                    <div class="left-third-row-para">
+                                        <a href="">What caused Air India crash? Investigators turn to 'tail fire'
+                                            for
+                                            clues</a>
+                                    </div>
+                                </div>
+                                <div class="left-third-row-second-child">
+                                    <img src="img/images.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="third-col-thrid-div">
+                                <p id="time">4 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="topic-divider me-3 ms-3">
+                            <hr>
+                        </div>
+                        <div class="left-third-row">
+                            <div class="left-third-row d-flex gap-4">
+                                <div class="left-third-row-first-child">
+                                    <div class="second-col-first-div d-flex align-items-center gap-1">
+                                        <div class="fevicon-image d-flex align-items-center">
+                                            <img src="img/faviconV2 (2).png" alt="">
+                                        </div>
+                                        <div class="image-heading">
+                                            <p>Hindustan times</p>
+                                        </div>
+                                    </div>
+                                    <div class="left-third-row-para">
+                                        <a href="">What caused Air India crash? Investigators turn to 'tail fire'
+                                            for
+                                            clues</a>
+                                    </div>
+                                </div>
+                                <div class="left-third-row-second-child">
+                                    <img src="img/images.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="third-col-thrid-div">
+                                <p id="time">4 Hours ago</p>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        
+
+
+
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
