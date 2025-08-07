@@ -92,7 +92,7 @@
 //         i++
 //     }
 //     return true;
-// } 
+// }
 // // console.log(isPrimee(12));
 
 // // TODO
@@ -111,7 +111,6 @@
 // let y = -a;
 // console.log(a, typeof y);
 // console.log(y);
-
 
 // function isPrimeee(num){
 //     if (num %2 == 0 ){
@@ -158,7 +157,6 @@
 // inLine(arr);
 // console.log(arr);
 
-
 // let arr = [,,,,];
 // let arr1=[1,2,3,4];
 // let arr2 = [[1,2,3],[4,6,6]];
@@ -166,8 +164,7 @@
 // console.log(arr1.length);
 // console.log(arr2.length);
 
-
-                                       //scoping 
+//scoping
 // function fun(){
 //     var x = 10;
 //     function gun(){
@@ -176,7 +173,7 @@
 //         console.log(y);
 //     }
 //     gun()
-//     console.log(x); 
+//     console.log(x);
 //     console.log(y);
 // }
 // fun();
@@ -193,19 +190,18 @@
 // {
 //     function(){
 //         return "123";
-//     }                           //we cannot call function outside curly braces 
+//     }                           //we cannot call function outside curly braces
 //     console.log(fun); // function fun
 // }
 // console.log(fun); // throw error
 
-
-// var teacher = "sanket"; //teacher -> global 
+// var teacher = "sanket"; //teacher -> global
 // function fun(){ // fun -> global
 //     console.log(teacher);
-//     var teacher = "pulkit"; // teacher -> fun scope ---> its a function scope which means we can only use it in this function and we can call it even before declaration cause we use (var) 
+//     var teacher = "pulkit"; // teacher -> fun scope ---> its a function scope which means we can only use it in this function and we can call it even before declaration cause we use (var)
 //     let content = "js"; // content -> fun scope ---> isa a block scope which means we call only use it in curly braces and only after declaring the variable cause we use (let)
-//     if(content == "js"){ 
-//         let hours = "120+" 
+//     if(content == "js"){
+//         let hours = "120+"
 //         console.log(hours);
 //     }
 //     console.log(teacher, content);
@@ -215,7 +211,7 @@
 // // console.log(content);
 
 // function fun(){
-//     //function declaration --> if the first word is function 
+//     //function declaration --> if the first word is function
 // }
 
 // let a = function fun(){
@@ -223,8 +219,8 @@
 // }   //it improves readeablity of code , and for recursive cases named function expression is mandatory
 
 // let f = function(){
-//     //anonymous function expression --> if the first word is not function 
-// }   // its pretty hard to debug anonymous function expression 
+//     //anonymous function expression --> if the first word is not function
+// }   // its pretty hard to debug anonymous function expression
 
 // (function x(){
 //     //function expression
@@ -234,7 +230,7 @@
 //     //function expression
 // })
 
-// //map function 
+// //map function
 
 // // function square(f){
 // //     return f*f;
@@ -270,7 +266,7 @@
 // function print(element, indx){
 //     return `Element at index ${indx} is ${element}`;
 // }
-  
+
 // function customMapper(arr, func){
 //     let result = [];
 //     for (let i = 0; i < arr.length; i++ ){
@@ -280,7 +276,6 @@
 // }
 // const value = customMapper(newArr, print);
 // console.log(value);
-
 
 // const newArr = [9, 8, 7, 6, 5]
 // function print(element, indx){
@@ -325,7 +320,7 @@
 //     console.log("Timer Done");
 // },0);
 // }
-// for(i=0; i <1000000000; i++){  
+// for(i=0; i <1000000000; i++){
 // }
 // console.log("Bye");
 
@@ -342,12 +337,10 @@
 //     console.log("Zain");
 // });
 
-
 // function getRandomInt(max){
 //     return Math.floor(Math.random() * max);
 
 // }
-
 
 // function PromiseWithLoop(){
 //     return new Promise(function execution(resolve, reject){
@@ -357,7 +350,7 @@
 //             resolve(num);
 //         }else{
 //             reject(num);
-//         } 
+//         }
 //     });
 // }
 // let x = PromiseWithLoop();
@@ -371,22 +364,20 @@
 //             resolve(num);
 //         }else{
 //             reject(num);
-//         } 
+//         }
 //         }, 2000);
-        
+
 //     });
 // }
 // let x = PromiseWithLoop();
 // console.log(x);
 // x.
 // then(
-//     function fulfillment(value){console.log("fulfilled", x);;}, 
+//     function fulfillment(value){console.log("fulfilled", x);;},
 //     function rejection(value){"rejected", x}
 // );
 
-
-
-// console.log("Hi"); 
+// console.log("Hi");
 // setTimeout(function (){
 //     console.log("first");
 //     setTimeout(() => {
@@ -428,7 +419,7 @@
 // app still running
 // end of script
 // showing loader
-// token stored in localstorage 
+// token stored in localstorage
 // background sync done
 // user data recieved from apis
 // welcome user
@@ -461,7 +452,6 @@
 // })
 // console.log("end");
 
-
 // console.log("Start of the file");
 // setTimeout( function timer1(){
 //     console.log("Timer1 Done");
@@ -478,44 +468,196 @@
 // }, 0);
 // console.log("End of the file");
 
-// 
-
+//
 
 // function blockingLoop(){
 //     for (let  i = 0; i < 10000000000; i++);
 // }
-function getRandomInt(max){
-    return Math.floor(Math.random() * max);
+// function getRandomInt(max){
+//     return Math.floor(Math.random() * max);
 
-}
+// }
 
-function PromiseWithLoop(){
-    return new Promise(function execution(resolve, reject){
-        setTimeout(() => {
-            let num = getRandomInt(10);
-        if (num % 2 == 0){
-            resolve(num);
-        }else{
-            reject(num);
-        } 
-        }, 2000);
-        
-    });
-}
+// function PromiseWithLoop(){
+//     return new Promise(function execution(resolve, reject){
+//         setTimeout(() => {
+//             let num = getRandomInt(10);
+//         if (num % 2 == 0){
+//             resolve(num);
+//         }else{
+//             reject(num);
+//         }
+//         }, 2000);
 
-let x = PromiseWithLoop();
-console.log(x);
-x.
-then(
-    function fulfillment(value){console.log("fulfilled", x);}, 
-    function rejection(value){"rejected", x}
-);
-async function run() {
-    try {
-        let result = await PromiseWithLoop();
-        console.log("Fulfilled with:", result);
-    } catch (error) {
-        console.log("Rejected with:", error);
-    }
-}
-console.log(run()); 
+//     });
+// }
+
+// let x = PromiseWithLoop();
+// console.log(x);
+// x.
+// then(
+//     function fulfillment(value){console.log("fulfilled", x);},
+//     function rejection(value){"rejected", x}
+// );
+// async function run() {
+//     try {
+//         let result = await PromiseWithLoop();
+//         console.log("Fulfilled with:", result);
+//     } catch (error) {
+//         console.log("Rejected with:", error);
+//     }
+// }
+// console.log(run());
+
+// function download(url, cb){
+//     console.log("Started downloading url form", url);
+//     setTimeout(function ecec(){
+//         console.log("Download completed after 5 minutes");
+//         const content = "ABCDE"
+//         // cb(content);
+//     }, 5000);
+// }
+
+// download("www.xyz.com", function processDownloadData(data){
+//     console.log("Downloaded data is", data);
+// });
+
+// function download(url){
+//     console.log("Started downloading for this given url", url);
+//     return new Promise(function exec (res, rej){
+//         setTimeout(function p() {
+//             console.log("completed download after 5sec");
+//             const content = "ABCDEF"
+//             res(content);
+//         }, 5000);
+
+//     })
+// }
+// download ("www.xyx.com")
+// .then(function fulfillmentHandler(value){
+//     console.log("content downloaded is", value);
+// });
+
+// Promise.resolve("foo")
+// .then(function f1(string) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             string += "bar";
+//             resolve(string);
+//         }, 10000);
+//     })
+// })
+
+// .then(function f2(string){
+//     setTimeout(() => {
+//         string += "baz";
+//         console.log(string);
+//     }, 1);
+//     return string;
+// })
+
+// .then(function f3(string){
+//     console.log(string);
+// });
+
+// function downloading(url, cb) {
+//   console.log("Downloading is started");
+//   cb(url);
+// }
+
+// downloading("abc11111.com", function exec(url) {
+//   setTimeout(() => {
+//     console.log("downloaded from ",url);
+//   }, 5000);
+// });
+
+// function download(url, cb){
+//     console.log("Downloading is started");
+//     setTimeout(function down(){
+//         console.log("Downloading is completed");
+//         const content = "ABCDEFGH"
+//         cb(content)
+//     }, 5000)
+// }
+
+// function writeFunction(data, cb){
+//     console.log("Started writing a file", data);
+//     setTimeout(function write(){
+//         console.log("Writing data is complete");
+//         const filename = "text.txt"
+//         cb(filename);
+//     }, 5000)
+// }
+
+// function uploadFile(url, file, cb){
+//     console.log("Started uploading ", file);
+//     setTimeout(function upload(){
+//         console.log("File uploding is completed");
+//         const response = "Success";
+//         cb(response)
+
+//     }, 5000)
+
+// }
+
+// download("www.youtube.com", function exec(content){
+//     console.log("Download of the file is complete with url", content);
+
+//     writeFunction(content, function execWrite(filename){
+//     console.log("written file is ", filename);
+
+//     uploadFile("www.youtube.com", filename, function execWrite(response){
+//     console.log("Upload is done result is " , response);
+// });
+
+// });
+
+// })
+
+//using promise
+
+// function download(url) {
+//   return new Promise(function exec(resolve, reject) {
+//     console.log("Downloading is started");
+//     setTimeout(function down() {
+//       console.log("Downloading is completed");
+//       const content = "ABCDEFGH";
+//       resolve(content);
+//     }, 5000);
+//   });
+// }
+
+// function writeFunction(data){
+//     return new Promise(function exec(resolve, reject){
+//         console.log("Started writing a file", data);
+//     setTimeout(function write(){
+//         console.log("Writing data is complete");
+//         const filename = "text.txt"
+//         resolve(filename);
+//     }, 5000)
+//     })
+// }
+
+// function uploadFileFunction(data){
+//     return new Promise(function exec(resolve, reject){
+//          console.log("Started uploading ", file);
+//     setTimeout(function upload(){
+//         console.log("File uploding is completed");
+//         const response = "Success";
+//         resolve(response)
+
+//     }, 5000)
+//     })
+// }
+//  download("www.cat.com")
+//  .then(function(content){
+//     console.log("Downloaded content", content)
+//     return writeFunction(content);
+//  })
+//  .then(function (data){
+//     console.log("File uploded", data);
+//     return uploadFileFunction(filename);
+//  })
+//  .then(function (response){
+//     console.log("File is uploaded", response);
+//  });
