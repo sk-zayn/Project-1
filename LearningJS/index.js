@@ -5,6 +5,8 @@
 //     console.log("Odd");
 // }
 
+const { StrictMode } = require("react");
+
 // let a = 100;
 // let b = 12;
 // let c = 51;
@@ -394,16 +396,16 @@
 // console.log("App started");
 
 // setTimeout(() => {
-//     console.log("🔄 Showing loader...");
+//     console.log(" Showing loader...");
 
 //     setTimeout(() => {
-//         console.log("✅ User data received from API");
+//         console.log(" User data received from API");
 
 //         Promise.resolve().then(() => {
-//             console.log("💾 Token stored in localStorage");
+//             console.log(" Token stored in localStorage");
 //         });
 
-//         console.log("🎉 Welcome User!");
+//         console.log(" Welcome User!");
 //     }, 2000); // Simulating API call
 
 // }, 1000); // Delay before showing loader
@@ -411,7 +413,7 @@
 // console.log("App still running...");
 
 // setTimeout(() => {
-//     console.log("📦 Background sync done");
+//     console.log(" Background sync done");
 // }, 3000);
 
 // console.log("End of script");
@@ -425,13 +427,13 @@
 // welcome user
 
 // setTimeout(() => {
-//         console.log("✅ User data received from API");
+//         console.log(" User data received from API");
 
 //         Promise.resolve()(() => {
-//             console.log("💾 Token stored in localStorage");
+//             console.log(" Token stored in localStorage");
 //         });
 
-//         console.log("🎉 Welcome User!");
+//         console.log(" Welcome User!");
 //     }, 2000); // Simulating API call
 
 // function fetchData(url) {
@@ -626,29 +628,44 @@
 //     }, 5000);
 //   });
 // }
-
-// function writeFunction(data){
-//     return new Promise(function exec(resolve, reject){
-//         console.log("Started writing a file", data);
-//     setTimeout(function write(){
-//         console.log("Writing data is complete");
-//         const filename = "text.txt"
-//         resolve(filename);
-//     }, 5000)
-//     })
+// function writeFunction(data) {
+//   return new Promise(function exec(resolve, reject) {
+//     console.log("Started writing a file", data);
+//     setTimeout(function write() {
+//       console.log("Writing data is complete");
+//       const filename = "text.txt";
+//       resolve(filename);
+//     }, 5000);
+//   });
 // }
-
-// function uploadFileFunction(data){
-//     return new Promise(function exec(resolve, reject){
-//          console.log("Started uploading ", file);
-//     setTimeout(function upload(){
-//         console.log("File uploding is completed");
-//         const response = "Success";
-//         resolve(response)
-
-//     }, 5000)
-//     })
+// function uploadFileFunction(data) {
+//   return new Promise(function exec(resolve, reject) {
+//     console.log("Started uploading ", data);
+//     setTimeout(function upload() {
+//       console.log("File uploding is completed");
+//       const response = "Success";
+//       resolve(response);
+//     }, 5000);
+//   });
 // }
+// function iteration(value){
+//     let future = iter.next(value);
+//     if (future.done) return
+//     future.value.then(iteration);
+// }
+// function* steps(){
+//     const downloadData = yield download("www.anc.com");
+//     console.log("Completed dowloading", downloadData);
+//     const writefile = yield writeFunction (downloadData);
+//     console.log("completed writing the file", writefile);
+//     const uploding = yield uploadFileFunction(writefile);
+//     console.log("upload done", uploding );
+//     return uploding;
+// }
+// const iter = steps();
+// const future = iter.next();
+// future.value.then(iteration());
+
 //  download("www.cat.com")
 //  .then(function(content){
 //     console.log("Downloaded content", content)
@@ -661,3 +678,281 @@
 //  .then(function (response){
 //     console.log("File is uploaded", response);
 //  });
+
+// function getNextElement(array){
+//     let idx = 0;
+//     function next(){
+//         if(idx == array.length){
+//             return {value: undefined, done: true};
+//         }
+//         const nextElement = array[idx];
+//         idx++;
+//         return {value: nextElement, done: false};
+//     }
+//     return {next};
+// }
+// const consumeFetcher = getNextElement([1, 3, 4, 6, 63]);
+// console.log(consumeFetcher.next());
+// console.log(consumeFetcher.next());
+// console.log(consumeFetcher.next());
+// console.log(consumeFetcher.next());
+// console.log(consumeFetcher.next());
+// console.log(consumeFetcher.next());
+
+// function evenNumberFetcher(array) {
+//   let idx = 0;
+//   function next() {
+//     while (idx < array.length) {
+//       const current = array[idx];
+//       idx++;
+//       if (current % 2 == 0) {
+//         return current;
+//       }
+//     }
+//     return und
+//   }
+//   return next;
+// }
+
+// const consumeFetcher = evenNumberFetcher([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
+// console.log(consumeFetcher());
+// console.log(consumeFetcher());
+// console.log(consumeFetcher());
+
+// function createCounter(start){
+//     return function exec(){
+//         return start++
+//     }
+// }
+// let x = createCounter(5);
+// console.log(x());
+// console.log(x());
+// console.log(x());
+// console.log(x());
+
+// function createCounter(start) {
+//   let value = start;
+//   return function exec() {
+//     // if (value <= 1){
+//     //     return "Times up"
+//     // }else{
+//     //     value--
+//     //     return value
+//     // }
+//     if (value > 0) {
+//       return value--;
+//     } else {
+//       return "Times up";
+//     }
+//   };
+// }
+// let c = createCounter(2);
+// console.log(c());
+// console.log(c());
+// console.log(c());
+// console.log(c());
+
+// function getNextChar(string){
+//     let idx = 0;
+//     return function nextChar (){
+//         return string[idx];
+//     }
+// }
+// let a = getNextChar("Zayn");
+// console.log(a());
+// console.log(a());
+// console.log(a());
+// console.log(a());
+
+// function getNextChar(string){
+//     let idx = 0;
+//     return function nextChar(){
+//         if (idx > string.length){
+//             return "No more character";
+//         }
+//         return string[idx++];
+//     }
+// }
+// let a = getNextChar("Zayn");
+// console.log(a());
+// console.log(a());
+// console.log(a());
+// console.log(a());
+// console.log(a());
+
+
+// function download(url) {
+//   return new Promise(function exec(resolve, reject) {
+//     console.log("Downloading is started");
+//     setTimeout(function down() {
+//       console.log("Downloading is completed");
+//       const content = "ABCDEFGH";
+//       resolve(content);
+//     }, 5000);
+//   });
+// }
+// function writeFunction(data) {
+//   return new Promise(function exec(resolve, reject) {
+//     console.log("Started writing a file", data);
+//     setTimeout(function write() {
+//       console.log("Writing data is complete");
+//       const filename = "text.txt";
+//       resolve(filename);
+//     }, 5000);
+//   });
+// }
+// function uploadFileFunction(data) {
+//   return new Promise(function exec(resolve, reject) {
+//     console.log("Started uploading ", data);
+//     setTimeout(function upload() {
+//       console.log("File uploding is completed");
+//       const response = "Success";
+//       resolve(response);
+//     }, 5000);
+//   });
+// }
+
+// async function steps(){
+//     const downloadData = await download("www.anc.com");
+//     console.log("Completed dowloading", downloadData);
+
+//     const writefile = await writeFunction (downloadData);
+//     console.log("completed writing the file", writefile);
+
+//     const uploding = await uploadFileFunction(writefile);
+//     console.log("upload done", uploding );
+
+//     return uploding;
+// }
+// steps().then(function (value){
+//     console.log("We have completed steps with ", value);
+// })
+// console.log("Outside");
+// for (let i = 0; i < 1000000000; i++){}
+// setTimeout(function f(){
+//     console.log("Timer done");
+// }, 4000)
+// console.log("For loop is done");
+
+// let car = {
+//   brand: "Toyota",
+//   showBrand: function() {
+//     console.log(this.showBrand);
+//   }
+// };
+// car.showBrand();
+
+
+// function abc(){
+//   console.log(abc);
+// }
+
+// abc();
+
+// let name = "zain";
+// let obj = {
+//   name: "Max",
+//   regular: function() { console.log(this.name); },
+//   arrow: () => console.log(this.name)
+// };
+// obj.regular(); // ?
+// obj.arrow();
+
+// let user = {
+//   name: "FiFi",
+//   sayHi: function() {
+//     let arrowFn = () => console.log(this.name);
+//     arrowFn();
+//   }
+// };
+// user.sayHi();
+
+// let data = {
+//   name: "Zayn",
+//   logName: function() {
+//     console.log(this.name);
+//   }
+// };
+// let ref = data.logName;
+// console.log(ref);
+
+// let x = false || true;
+// let y = "true" && "false";
+// let z = false && true;
+// console.log(x, y, z);
+// console.log(typeof(y)); 
+
+// let.forEach(element => {
+  
+// });
+
+// let iphone = {
+//   name : "Iphone",
+//   price : 1000000,
+//   raing : 4.8,
+
+//   display(){
+//     console.log(this);
+//   }
+// }
+
+// let macbook = {
+//   name : "macbook",
+//   price : 1000000,
+//   raing : 4.9,
+
+//   display(){
+//     console.log(this);
+//   }
+// }
+
+// iphone.display()
+
+// class Product{
+//   name;
+//   price; 
+//   rating;
+//   description;
+
+
+//   constructor(n, p, r, d){
+//     this.name = n;
+//     this.price = p;
+//     this.rating = r;
+//     this.description =d;
+
+//   }
+// }
+
+// const p = new Product("bag", 400, 4.8, "pretty cool bag");
+// console.log(p);
+
+'use strict';
+var obj2 = {
+  name: "sarthak",
+  company: "Phonepay",
+  display: function (){
+    // console.log(this);
+    setTimeout(function(){
+      console.log(this);
+    },3000)
+  }
+}
+obj2.display()
+
+'use strict'; // strict mode enabled
+
+var obj2 = {
+  name: "sarthak",
+  company: "Phonepay",
+  display: function (){
+    // 'this' here = obj2 because display is called as obj2.display()
+    
+    setTimeout(function(){
+      // In strict mode, normal functions called without an object have this = undefined
+      console.log(this); // Output: undefined
+    }, 3000);
+  }
+}
+
+obj2.display();
