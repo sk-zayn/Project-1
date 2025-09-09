@@ -20,6 +20,7 @@
 let saveButton = document.getElementById('save-todo');
 let todoInputBar = document.getElementById('todo-input-bar');
 
+let todoArray = []
 
 todoInputBar.addEventListener("input", ()=>{
    let  inputValue = todoInputBar.value;
@@ -37,13 +38,15 @@ saveButton.addEventListener("click", ()=>{
     if (inputValue.length == 0){
         return;
     }else{
-        addTodo(inputValue);
+        todoArray.push(inputValue)
+        addTodo(inputValue,todoArray.length);
+        todoInputBar.value = ''
     }
 })
 
 let todoDataSection = document.getElementById("todo-data");
 
-function addTodo(todoData) {
+function addTodo(todoData,todoCount) {
     // created html structure
     let rowDiv = document.createElement("div");
     let todoItems = document.createElement("div");
@@ -56,7 +59,7 @@ function addTodo(todoData) {
     let hr = document.createElement("hr")
 
     // gave content that should present in the divs
-    todoNumber.textContent = "1.";
+    todoNumber.textContent = `${todoCount}.`
     todoDetail.textContent = todoData;
     todoStatus.textContent = "In Progress";
     deleteButton.textContent = "Delete";
