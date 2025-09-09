@@ -1,0 +1,44 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+.input-bar{
+    flex-basis: 70%;
+}
+.input-bar input{
+    width: 100%;
+}
+.todo-no{
+    flex-basis: 5%;
+    font-weight: bold;
+}
+.todo-details{
+    flex-basis: 55%;
+    font-weight: bold;
+
+}
+.todo-status{
+    flex-basis: 10%;
+    font-weight: bold;
+
+}
+.todo-actions{
+    flex-basis: 15%;
+    font-weight: bold;
+
+}
+.to-do-heading{
+    margin-top: 1rem;
+}
+.input-button{
+box-shadow: 0px 0px 2px black;
+}
+.row{
+    margin: 1rem 0;
+}

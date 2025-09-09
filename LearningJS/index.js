@@ -1,3 +1,5 @@
+// 'use strict';
+
 // let a = 11;
 // if (a % 2 == 0){
 //     console.log("Even");
@@ -5,7 +7,7 @@
 //     console.log("Odd");
 // }
 
-const { StrictMode } = require("react");
+// const { StrictMode } = require("react");
 
 // let a = 100;
 // let b = 12;
@@ -780,7 +782,6 @@ const { StrictMode } = require("react");
 // console.log(a());
 // console.log(a());
 
-
 // function download(url) {
 //   return new Promise(function exec(resolve, reject) {
 //     console.log("Downloading is started");
@@ -842,7 +843,6 @@ const { StrictMode } = require("react");
 // };
 // car.showBrand();
 
-
 // function abc(){
 //   console.log(abc);
 // }
@@ -880,10 +880,10 @@ const { StrictMode } = require("react");
 // let y = "true" && "false";
 // let z = false && true;
 // console.log(x, y, z);
-// console.log(typeof(y)); 
+// console.log(typeof(y));
 
 // let.forEach(element => {
-  
+
 // });
 
 // let iphone = {
@@ -910,10 +910,9 @@ const { StrictMode } = require("react");
 
 // class Product{
 //   name;
-//   price; 
+//   price;
 //   rating;
 //   description;
-
 
 //   constructor(n, p, r, d){
 //     this.name = n;
@@ -927,32 +926,68 @@ const { StrictMode } = require("react");
 // const p = new Product("bag", 400, 4.8, "pretty cool bag");
 // console.log(p);
 
-'use strict';
-var obj2 = {
-  name: "sarthak",
-  company: "Phonepay",
-  display: function (){
-    // console.log(this);
-    setTimeout(function(){
-      console.log(this);
-    },3000)
-  }
-}
-obj2.display()
+// var obj2 = {
+//   name: "sarthak",
+//   company: "Phonepay",
+//   display: function (){
+//     // console.log(this);
+//     setTimeout(function(){
+//       console.log(this);
+//     },3000)
+//   }
+// }
+// obj2.display()
 
-'use strict'; // strict mode enabled
+// 'use strict'; // strict mode enabled
 
-var obj2 = {
-  name: "sarthak",
-  company: "Phonepay",
-  display: function (){
-    // 'this' here = obj2 because display is called as obj2.display()
-    
-    setTimeout(function(){
-      // In strict mode, normal functions called without an object have this = undefined
-      console.log(this); // Output: undefined
-    }, 3000);
-  }
-}
+// var obj2 = {
+//   name: "sarthak",
+//   company: "Phonepay",
+//   display: function (){
+//     // 'this' here = obj2 because display is called as obj2.display()
 
-obj2.display();
+//     setTimeout(function(){
+//       // In strict mode, normal functions called without an object have this = undefined
+//       console.log(this); // Output: undefined
+//     }, 3000);
+//   }
+// }
+
+// obj2.display();
+
+// const player1 = {
+//   firstname: "virat",
+//   lastname: "Kohli",
+//   game: "cricket",
+//   team: "india",
+//   getDetails: function () {
+//     console.log( this.firstname, this.lastname, "plays", this.game, "for team", this.team );
+//   },
+// };
+
+// const fetch = function (y, z) {
+//   console.log(y*z);
+//   this.getDetails();
+// };
+// fetch.apply(player1,[2, 5]);
+
+
+// let obj1 = {
+//   x: 10, 
+//   y: 20,
+//   z:30
+// }
+// Object.freeze(obj1);
+// obj1.z = 60;
+// obj1.a = 23;
+// console.log(obj1);
+
+// let obj2 = {
+//   x: 10, 
+//   y: 20,
+//   z:30
+// }
+// Object.seal(obj2);
+// obj2.z = 60;
+// obj2.a = 23;
+// console.log(obj2);
