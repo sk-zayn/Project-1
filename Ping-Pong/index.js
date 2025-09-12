@@ -1,71 +1,91 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const table = document.getElementById("ping-pong-table");
+    const paddle = document.getElementById("paddle");
+    const ball = document.getElementById("ball");
 
-    let table = document.getElementById("ping-pong-table");
-    let paddle = document.getElementById("paddle");
-    let ball = document.getElementById("ball");
+    // Initial ball position
+    let ballX = 50; // distance from left of table
+    let ballY = 50; // distance from top of table
 
+    // Ball velocity
+    let dx = 8; // horizontal speed
+    let dy = 8; // vertical speed
 
-    // ballX and ballY will help us to position the ball at the start of the game w.r.t table.
-    let ballX = 50; //distance of the top of the ball with.respect.to table 
-    let ballY = 50; //distance of the left of the ball w.r.t table
+    // Set initial ball position
+    ball.style.left = `${ballX}px`;
+    ball.style.top = `${ballY}px`;
 
-    let dx = 8; //make ball move in x direction by 2px if positive and -x direction if negative
-    let dy = 8;//make ball move in y direction by 2px if positive and -y direction if negative
-
-    ball.style.left = `${ballX}px`  //ball -> element, style -> property, top -> position. changing the position of the ball from top as the ballX value changes
-    ball.style.top = `${ballY}px` //ball -> element, style -> property, top -> position. changing the position of the ball from left as the ballY value changes
-
-
+    // ==== BALL MOVEMENT LOOP ====
     setInterval(() => {
-
+        // Move the ball
         ballX += dx;
+        ballY += dy;
+
+        // Apply position to ball element
         ball.style.left = `${ballX}px`;
-        if(ballX > table.offsetWidth - ball.offsetWidth-4 || ballX <= 0){
-            dx *= -1;
+        ball.style.top = `${ballY}px`;
+
+        // ==== BALL ↔ PADDLE COLLISION ====
+        const ballLeft = ballX;
+        const ballRight = ballX + ball.offsetWidth;
+        const ballTop = ballY;
+        const ballBottom = ballY + ball.offsetHeight;
+
+        const paddleLeft = paddle.offsetLeft;
+        const paddleRight = paddle.offsetLeft + paddle.offsetWidth;
+        const paddleTop = paddle.offsetTop;
+        const paddleBottom = paddle.offsetTop + paddle.offsetHeight;
+
+        if (
+            ballRight > paddleLeft &&
+            ballLeft < paddleRight &&
+            ballBottom > paddleTop &&
+            ballTop < paddleBottom
+        ) {
+            // Calculate overlap on each side
+            const overlapLeft = ballRight - paddleLeft;
+            const overlapRight = paddleRight - ballLeft;
+            const overlapTop = ballBottom - paddleTop;
+            const overlapBottom = paddleBottom - ballTop;
+
+            const minOverlap = Math.min(overlapLeft, overlapRight, overlapTop, overlapBottom);
+
+            // Decide bounce direction based on smallest overlap
+            if (minOverlap === overlapLeft || minOverlap === overlapRight) {
+                dx *= -1; // bounce horizontally
+            } else {
+                dy *= -1; // bounce vertically
+            }
         }
 
-        ballY += dy;
-        ball.style.top = `${ballY}px`;
-        if(ballY > table.offsetHeight - ball.offsetHeight-4 || ballY <= 0){
+        // ==== BALL ↔ TABLE COLLISION ====
+        if (ballX > table.offsetWidth - ball.offsetWidth - 4 || ballX <= 0) {
+            dx *= -1;
+        }
+        if (ballY > table.offsetHeight - ball.offsetHeight - 4 || ballY <= 0) {
             dy *= -1;
         }
 
-    },20);
+    }, 20);
 
+    // ==== PADDLE MOVEMENT ====
     let paddleY = 0;
-    let dPy = 10;
-    document.addEventListener("keydown", (event)=> {
-        event.preventDefault() // to prevent the default behaviour execution.
-        if(event.keyCode == 38 && paddleY > 0){
-            paddleY += (-1)*dPy;
-        }
-        else if (event.keyCode == 40 && paddleY < table.offsetHeight - paddle.offsetHeight - 5){
+    const dPy = 10;
+
+    document.addEventListener("keydown", (event) => {
+        event.preventDefault(); // stop page scrolling with arrow keys
+
+        if (event.keyCode === 38 && paddleY > 0) { 
+            // UP arrow
+            paddleY -= dPy;
+        } else if (
+            event.keyCode === 40 &&
+            paddleY < table.offsetHeight - paddle.offsetHeight - 5
+        ) {
+            // DOWN arrow
             paddleY += dPy;
         }
-        paddle.style.top = `${paddleY}px`
+
+        paddle.style.top = `${paddleY}px`;
     });
-
-
-
-
-
-
-
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-})
+});

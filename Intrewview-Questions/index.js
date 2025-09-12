@@ -52,6 +52,8 @@
         
 //     });
 // }
+
+
 // let x = PromiseWithLoop();
 // console.log(x);
 // console.log("Highlight");
@@ -73,29 +75,31 @@
 // myPromise.catch((error)=>{
 //     console.log(error);
 // });
-function getRandomNumber(){
-   return new Promise((resolve, reject) => {
-    setTimeout(() => {
-        let num = Math.floor(Math.random() * 10);
+
+
+// function getRandomNumber(){
+//    return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         let num = Math.floor(Math.random() * 10);
        
         
-        if (num % 2 == 0){
-        resolve (num)
-    }else {
-        reject (num )
-    }
-    }, 1000);
+//         if (num % 2 == 0){
+//         resolve (num)
+//     }else {
+//         reject (num )
+//     }
+//     }, 1000);
 
     
     
-   });
-};
+//    });
+// };
 
-getRandomNumber().then((result) => {
-    console.log("resolved"+" " +result);
+// getRandomNumber().then((result) => {
+//     console.log("resolved"+" " +result);
     
-}).catch((error)=>{
-    console.log("rejected"+" "+ error);
-})
+// }).catch((error)=>{
+//     console.log("rejected"+" "+ error);
+// })
 
 
