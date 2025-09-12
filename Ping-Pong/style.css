@@ -13,6 +13,7 @@ html{
     height: 400px;
     border: 2px solid black;
     position: relative;
+    margin: 0 auto;
 }
 
 #paddle{
@@ -20,6 +21,7 @@ html{
     width: 12px;
     background: red;
     position: absolute;
+    margin-left: 2px;
 }
 #ball{
     height: 20px;
