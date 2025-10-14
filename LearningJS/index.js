@@ -971,9 +971,8 @@
 // };
 // fetch.apply(player1,[2, 5]);
 
-
 // let obj1 = {
-//   x: 10, 
+//   x: 10,
 //   y: 20,
 //   z:30
 // }
@@ -983,7 +982,7 @@
 // console.log(obj1);
 
 // let obj2 = {
-//   x: 10, 
+//   x: 10,
 //   y: 20,
 //   z:30
 // }
@@ -991,3 +990,46 @@
 // obj2.z = 60;
 // obj2.a = 23;
 // console.log(obj2);
+
+// let range = {
+//   from: 1,
+//   to: 5,
+// };
+
+// // for (const num of range) {
+// //   console.log(num);
+// // }
+// range.name = "zain";
+
+// console.log(range);
+
+// let person = {
+//   name:"zain",
+//   age:21,
+//   city:"mumbai",
+// };
+
+// console.log(Object.keys(person)); 
+// console.log(Object.values(person));
+
+// const car = { brand: "Toyota", year: 2022, color: "red" };
+// console.log(Object.entries(car));
+// let a = Object.entries(car)
+// console.log(a);
+// console.log(Object.fromEntries(a));
+
+// const student = { name: "Zayn", grade: "A" };
+// const copy = Object.assign({} , student, {age : 22});
+// console.log(copy);
+
+// console.log(Object.values(["a", "b", "c"]));
+
+const obj1 = { a: 1 };
+const obj2 = { b: 2, c: 3 };
+console.log(Object.assign(obj1, obj2)
+);
+
+
+
+
+

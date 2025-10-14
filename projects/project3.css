@@ -13,7 +13,7 @@ html{
     display: flex ;
     justify-content: center;
     align-items: center;
-    background-color: rgb(8, 248, 208);
+    /* background-color: rgb(8, 248, 208); */
     height: 500px;
 
 }
@@ -22,7 +22,7 @@ html{
     position: relative;
     height: 7rem;
     width: 7rem;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -30,8 +30,8 @@ html{
 
 .loader1 > div{
     border: 3px solid rgb(242, 5, 5);
-    border-top: 3px solid antiquewhite;
-    border-bottom: 3px solid antiquewhite;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
@@ -50,8 +50,8 @@ html{
 .loader > div{
     /* position: absolute; */
     border: 3px solid black;
-    border-right: 3px solid antiquewhite;
-    border-left: 3px solid antiquewhite;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
     border-radius: 50%;
     height: 4rem;
     width: 4rem;

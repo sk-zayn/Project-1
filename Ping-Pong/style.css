@@ -7,6 +7,12 @@ html{
 *, *::after, *::before{
     box-sizing: inherit;
 }
+h1{
+    color: white;
+}
+body{
+    background-color: rgb(227, 171, 103);
+}
 
 #ping-pong-table{
     width: 700px;
@@ -14,19 +20,23 @@ html{
     border: 2px solid black;
     position: relative;
     margin: 0 auto;
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0px 0px 150px rgb(255, 254, 253);
+    margin-top: 50px;
+
 }
 
 #paddle{
     height: 75px;
     width: 12px;
-    background: red;
+    background: rgb(192, 77, 0);
     position: absolute;
-    margin-left: 2px;
+    /* margin-left: 2px; */
 }
 #ball{
     height: 20px;
     width: 20px;
     border-radius:50%;
-    background-color: blue;
+    background-color: white;
     position: absolute;
 }

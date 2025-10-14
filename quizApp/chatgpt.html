@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Quiz App with Flip Clock</title>
+    <link rel="stylesheet" href="chatgpt.css">
+    
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1 class="quiz-title">🧠 Advanced Quiz</h1>
+            <p class="quiz-subtitle">Test your knowledge with expert-level questions</p>
+            
+            <!-- FLIP CLOCK TIMER -->
+            <div class="flip-clock-container">
+                <div class="flip-clock" id="minutes-tens">
+                    <div class="flip-card">
+                        <div class="flip-face front">0</div>
+                        <div class="flip-face back">0</div>
+                    </div>
+                </div>
+                <div class="flip-clock" id="minutes-units">
+                    <div class="flip-card">
+                        <div class="flip-face front">0</div>
+                        <div class="flip-face back">0</div>
+                    </div>
+                </div>
+                <div class="flip-separator">:</div>
+                <div class="flip-clock" id="seconds-tens">
+                    <div class="flip-card">
+                        <div class="flip-face front">3</div>
+                        <div class="flip-face back">2</div>
+                    </div>
+                </div>
+                <div class="flip-clock" id="seconds-units">
+                    <div class="flip-card">
+                        <div class="flip-face front">0</div>
+                        <div class="flip-face back">9</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timer-label">Time Remaining</div>
+        </div>
+
+        <div class="quiz-content">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress"></div>
+            </div>
+            
+            <div class="question-info">
+                <div class="question-number" id="question-number">Question 1 of 10</div>
+                <div class="difficulty-badge" id="difficulty">Easy</div>
+            </div>
+
+            <div class="question-text" id="question-text"></div>
+
+            <div class="options-container" id="options-container"></div>
+        </div>
+
+        <div class="quiz-controls">
+            <button class="btn" id="prev-btn" disabled>← Previous</button>
+            
+            <div class="question-dots" id="question-dots"></div>
+            
+            <button class="btn" id="next-btn">Next →</button>
+        </div>
+
+        <div style="text-align: center; margin: 20px 0;">
+            <button class="btn btn-success" id="finish-btn" style="display: none;">🎯 Finish Quiz</button>
+        </div>
+    </div>
+
+    <!-- RESULTS MODAL -->
+    <div class="modal" id="results-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🎉 Quiz Complete!</h2>
+                <div class="score-display" id="final-score">85%</div>
+                <button class="btn" onclick="closeResults()" style="position: absolute; top: 15px; right: 15px; padding: 8px 12px;">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="results-grid" id="results-grid"></div>
+                <div id="detailed-results"></div>
+                <div style="text-align: center; margin-top: 20px; gap: 10px; display: flex; justify-content: center; flex-wrap: wrap;">
+                    <button class="btn btn-success" onclick="startNewQuiz()">🔄 New Quiz</button>
+                    <button class="btn" onclick="closeResults()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="chatgpt.js">
+     </script>
+</body>
+</html>

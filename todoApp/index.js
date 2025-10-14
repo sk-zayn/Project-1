@@ -1,4 +1,4 @@
-// // save get-todo save-todo and todo-input-bar in a variable so that we can we that variable whenever we need.
+// save get-todo save-todo and todo-input-bar in a variable so that we can we that variable whenever we need.
 //                 //<div class="row">
 //                 //<div class="to-do-heading d-flex flex-row justify-content-center">
 //                     //<div class="todo-no ">No.</div>
@@ -9,12 +9,12 @@
 //                 //</div>;
 
 
-// // first we will make the todo data section div which will store our row div
-// //we need to make an empty div and save it in a variable that will make us a row div and then same with the inner div 
-// //we need to make all the div we need and then to move div in another div we need to use append child property to put one div in another
-// // then we add all the class that we have in css in the js file div by div using the variable name 
-// // then the variable we made earlier we will give them text content, that what that div should have in it 
-// // 
+// first we will make the todo data section div which will store our row div
+// we need to make an empty div and save it in a variable that will make us a row div and then same with the inner div 
+// we need to make all the div we need and then to move div in another div we need to use append child property to put one div in another
+// then we add all the class that we have in css in the js file div by div using the variable name 
+// then the variable we made earlier we will give them text content, that what that div should have in it 
+// add event listener on input bar so that when you press "Enter" it will add the input bar.value to add todo
 
 
 let saveButton = document.getElementById('save-todo');
@@ -22,18 +22,17 @@ let todoInputBar = document.getElementById('todo-input-bar');
 let wrapper = document.getElementById("todo-wrapper")
 
 let todoArray = []
-
+//Making save button able and disable.
 todoInputBar.addEventListener("input", ()=>{
    let  inputValue = todoInputBar.value;
     if (inputValue.length == 0){
-        saveButton.classList.add("disabled");
-        
+        saveButton.classList.add("disabled");        
     }else{
-        saveButton.classList.remove("disabled");
-        
+        saveButton.classList.remove("disabled");     
     }
 });
 
+// Adding todo when save button is clicked
 saveButton.addEventListener("click", ()=>{
     let  inputValue = todoInputBar.value;
     if (inputValue.length == 0){
@@ -43,10 +42,22 @@ saveButton.addEventListener("click", ()=>{
         addTodo(inputValue,todoArray.length);
         todoInputBar.value = ''
     }
-})
+});
 
+// Adding todo on pressing Enter 
+todoInputBar.addEventListener("keypress", (event)=>{
+    let  inputValue = todoInputBar.value;
+  if (event.key === "Enter"){
+    console.log("ho");
+    todoArray.push(inputValue)
+        addTodo(inputValue,todoArray.length);
+        todoInputBar.value = ''
+  }
+});
+
+// Deleting the whole wrapper when clicking on the delete button 
 function deleteTodo (event){
-    // let wrapperDeleter = event.target.parentElement.parentElement.parentElement.parentElement;
+  // let wrapperDeleter = event.target.parentElement.parentElement.parentElement.parentElement;
     // wrapperDeleter.remove()
     let deleteButtonPressed = event.target; //targeting the delete button. Event always got applied to the element that got addEventListener. In thsi case deleteButton.
     let indexToBeRemoved = Number(deleteButtonPressed.getAttribute("todo-index")); 
@@ -55,8 +66,6 @@ function deleteTodo (event){
      todoArray.forEach((element, index)=>{
         addTodo(element, index+1);
      })
-   
-    
 }
 
 let todoDataList = document.getElementById("todo-data-list");
@@ -212,7 +221,7 @@ function addTodo(todoData,todoCount) {
 //   });
 // }
 
-// // ✅ Get required elements once
+// ✅ Get required elements once
 // const saveButton = document.getElementById("save-todo");
 // const todoInputBar = document.getElementById("todo-input-bar");
 // const todoDataList = document.getElementById("todo-data-list");
