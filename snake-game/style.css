@@ -39,3 +39,24 @@ body{
     margin: 10px 0;
 
 }
+.food{
+    background: red;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: none;
+    border-radius: 100%;
+
+    animation: blink 0.8s ease-in-out infinite; /* 👈 add this line */
+}
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.3; /* makes it look like it’s fading */
+        transform: scale(0.85); /* small shrink for effect */
+    }
+}
+

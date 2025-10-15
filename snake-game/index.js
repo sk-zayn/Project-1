@@ -11,9 +11,50 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let dy = 0;
 
 
+
+
+    function drawScoreBoard(){
+        const scoreBoard = document.getElementById("score-board");
+        scoreBoard.textContent = `Score ${score}`;
+    }
+
+    function drawDiv(x, y, classname){
+        const div = document.createElement("div");
+        div.classList.add(classname);
+        div.style.top = `${y}`;
+        div.style.left = `${x}`;
+        return div
+
+    }
+
+    function drawSnakeAndFood(){
+        gameArena.innerHTML = ''; //To make the game arena empty before drawing anything on it.
+
+        const foodElement = drawDiv(food.x , food.y , "food");
+        gameArena.appendChild(foodElement);
+    }
+
+    function gameLoop(){
+        setInterval(() => {
+            drawScoreBoard();
+            drawSnakeAndFood();
+        }, 1000);
+    }
+
+    function runGame(){
+        gameStarted = true;
+        gameLoop();
+
+    }
+
     function initializeGame (){
         const scoreBoard = document.getElementById("score-board");
-        scoreBoard.textContent = 5;
+
+        const startButton = document.getElementById("start-button")
+        startButton.addEventListener("click", ()=> {
+            startButton.style.display = "none";
+            runGame();
+        })
 
     }
     initializeGame()
