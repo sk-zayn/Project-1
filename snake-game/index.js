@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
     function drawDiv(x, y, classname){
         const div = document.createElement("div");
         div.classList.add(classname);
-        div.style.top = `${y}`;
-        div.style.left = `${x}`;
+        div.style.top = `${y}px`;
+        div.style.left = `${x}px`;
         return div
 
     }
@@ -30,8 +30,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
     function drawSnakeAndFood(){
         gameArena.innerHTML = ''; //To make the game arena empty before drawing anything on it.
 
+        snake.forEach((snakeCell)=>{
+            const element = drawDiv(snakeCell.x , snakeCell.y, "snake");
+            gameArena.appendChild(element)
+        })
+
         const foodElement = drawDiv(food.x , food.y , "food");
         gameArena.appendChild(foodElement);
+
+
     }
 
     function gameLoop(){
